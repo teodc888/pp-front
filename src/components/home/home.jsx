@@ -43,7 +43,7 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post(`http://localhost:3001/portfolio`, input);
+    await axios.post(`https://push-porfolio.herokuapp.com/portfolio`, input);
     setInput({
       titulo: "",
       descripcion: "",
